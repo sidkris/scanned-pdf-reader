@@ -9,19 +9,19 @@ import os
 import base64
 import streamlit as st
 
-# display_file = r"bell_labs.pdf"
+display_file = r"bell_labs.pdf"
 
-# with open(display_file, "rb") as f:
-#   base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+with open(display_file, "rb") as f:
+  base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 
-# pdf_display = f"""<embed
-# class="pdfobject"
-# type="application/pdf"
-# title="Embedded PDF"
-# src="data:application/pdf;base64,{base64_pdf}"
-# style="overflow: auto; width: 50%; height: 50%;">"""
+pdf_display = f"""<embed
+class="pdfobject"
+type="application/pdf"
+title="Embedded PDF"
+src="data:application/pdf;base64,{base64_pdf}"
+style="overflow: auto; width: 50%; height: 50%;">"""
 
-# st.markdown(pdf_display, unsafe_allow_html = True)
+st.markdown(pdf_display, unsafe_allow_html = True)
 
 os.environ['OPENAI_API_KEY'] = "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"
 
