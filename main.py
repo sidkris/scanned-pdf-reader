@@ -12,7 +12,7 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# extract data from the PDF
+# extract data from the scanned PDF
 reader = PdfReader(r'bell_labs.pdf')
 
 # read data from the PDF and store in a variable
